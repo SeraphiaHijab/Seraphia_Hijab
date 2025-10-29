@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seraphia Hijab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="gambar/logo.jpg" alt="Logo Seraphia Hijab" class="logo">
+    <h1>Seraphia Hijab</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Keanggunan dalam Setiap Balutan</h2>
+    <p>Temukan pesona elegan dan kesederhanaan dalam hijab pilihan terbaik kami.</p>
+    <a href="#koleksi" class="btn">Lihat Koleksi</a>
+  </section>
+
+  <section id="koleksi" class="koleksi">
+    <h2>Koleksi Terbaru</h2>
+
+    <!-- Hijab Paris -->
+    <div class="produk" onclick="toggleVarian('paris')">
+      <img src="gambar/model1.jpg" alt="Hijab Paris">
+      <h3>Hijab Paris</h3>
+      <p>Lembut, ringan, dan cocok untuk gaya sehari-hari.</p>
+    </div>
+
+    <div id="varian-paris" class="varian">
+      <div class="sub-produk">
+        <img src="gambar/model3.jpg" alt="Varian Hijab Paris">
+        <h4>Paris dari Seraphia Hijab</h4>
+        <p>Hadir dengan pilihan warna lembut, bahan nyaman, dan sentuhan elegan untuk tampilan anggun setiap hari. 
+           Menjadi simbol keanggunan yang tak lekang oleh waktu.</p>
+      </div>
+    </div>
+
+    <!-- 🌷 Tombol Linktree di Tengah -->
+    <div class="linktree-section">
+      <a href="https://linktr.ee/Seraphia_Hijab" target="_blank" class="tombol-linktree">Kunjungi Koleksi Lengkap Kami</a>
+    </div>
+
+    <!-- Hijab Bella Square -->
+    <div class="produk" onclick="toggleVarian('bella')">
+      <img src="gambar/model2.jpg" alt="Hijab Bella Square">
+      <h3>Hijab Bella Square</h3>
+      <p>Struktur kain rapi, elegan, dan mudah dibentuk.</p>
+    </div>
+
+    <div id="varian-bella" class="varian">
+      <div class="sub-produk">
+        <img src="gambar/model4.jpg" alt="Varian Hijab Bella Square">
+        <h4>Bella by Seraphia Hijab</h4>
+        <p>Memadukan ketegasan bentuk dengan kelembutan warna pastel, 
+           Bella menghadirkan kesan mewah dan berkelas di setiap penampilanmu.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Seraphia Hijab. Semua hak dilindungi.</p>
+  </footer>
+
+  <script>
+    function toggleVarian(id) {
+      const varian = document.getElementById('varian-' + id);
+      varian.classList.toggle('tampil');
+    }
+  </script>
+</body>
+</html>
