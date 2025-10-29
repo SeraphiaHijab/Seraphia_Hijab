@@ -1,0 +1,195 @@
+/* 🌸 Font & Dasar */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #fdf6f0 0%, #fff 100%);
+  color: #3a3a3a;
+  text-align: center;
+  transition: background 0.5s ease;
+}
+
+/* 🌿 Header Elegan */
+header {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  border-bottom: 3px solid #f2d4ca;
+  transition: all 0.3s ease;
+}
+header:hover {
+  background: #fdf6f0;
+}
+.logo {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+header h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #a8756b;
+  margin: 5px 0;
+  letter-spacing: 1px;
+}
+.tombol {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #a8756b;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.tombol:hover {
+  background: #c79788;
+}
+
+/* 🌷 Hero Section */
+.hero {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f9e5dd 0%, #fff 100%);
+  color: #604040;
+}
+.hero h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.hero p {
+  font-size: 16px;
+  color: #775b5b;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #a8756b;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #c79788;
+  transform: scale(1.05);
+}
+
+/* 🌼 Koleksi Produk */
+.koleksi {
+  padding: 40px 15px;
+}
+.koleksi h2 {
+  font-size: 22px;
+  color: #a8756b;
+  margin-bottom: 20px;
+}
+.produk {
+  margin: 20px auto;
+  max-width: 300px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.produk:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(168,117,107,0.25);
+}
+.produk img {
+  width: 100%;
+  border-radius: 12px;
+  transition: 0.4s ease;
+}
+.produk:hover img {
+  transform: scale(1.02);
+}
+.produk h3 {
+  color: #7a5454;
+  margin-top: 12px;
+  font-weight: 600;
+}
+.produk p {
+  color: #8c6b6b;
+  font-size: 14px;
+}
+
+/* 💫 Varian (Sub-produk) */
+.varian {
+  display: none;
+  margin-bottom: 25px;
+}
+.varian.tampil {
+  display: block;
+  animation: fadeIn 0.6s ease;
+}
+.sub-produk {
+  background: linear-gradient(180deg, #fff, #f9f1ee);
+  max-width: 280px;
+  margin: 10px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: 0.3s;
+}
+.sub-produk:hover {
+  box-shadow: 0 6px 18px rgba(168,117,107,0.25);
+  transform: translateY(-3px);
+}
+.sub-produk img {
+  width: 100%;
+  border-radius: 10px;
+}
+.sub-produk h4 {
+  color: #a8756b;
+  margin: 10px 0 5px;
+}
+.sub-produk p {
+  color: #7a5454;
+  font-size: 14px;
+  line-height: 1.5;
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* 🌙 Footer */
+footer {
+  background: #a8756b;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 40px;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+}
+
+/* 🌸 Linktree Section di Tengah */
+.linktree-section {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.tombol-linktree {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(135deg, #a8756b, #cfa89f);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(168,117,107,0.25);
+  transition: 0.3s ease;
+}
+.tombol-linktree:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #cfa89f, #a8756b);
+  box-shadow: 0 6px 14px rgba(168,117,107,0.3);
+}
