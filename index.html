@@ -10,6 +10,126 @@
   <meta name="description" content="Seraphia Hijab - Koleksi hijab elegan, lembut, dan nyaman dipakai setiap hari.">
   <meta name="keywords" content="hijab, hijab syar'i, hijab paris, hijab bella, hijab murah, seraphia hijab">
   <meta name="author" content="Seraphia Hijab">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffafc;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #f7e9ee;
+    }
+
+    .logo {
+      width: 80px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      margin-top: 10px;
+      font-size: 24px;
+    }
+
+    .hero {
+      padding: 40px 20px;
+      background-color: #ffeef4;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+    }
+
+    .hero .btn {
+      background-color: #e86c94;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    .koleksi {
+      padding: 30px 20px;
+    }
+
+    .produk {
+      cursor: pointer;
+      display: inline-block;
+      width: 250px;
+      margin: 15px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .produk:hover {
+      transform: scale(1.03);
+    }
+
+    .produk img {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .produk h3 {
+      margin: 10px 0 5px;
+    }
+
+    .produk p {
+      font-size: 14px;
+      padding: 0 10px 10px;
+    }
+
+    .varian {
+      display: none;
+      margin: 20px auto;
+      max-width: 500px;
+      background: #fff6f9;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .varian img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .linktree-section {
+      margin: 40px 0;
+    }
+
+    .tombol-linktree {
+      background-color: #e86c94;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .whatsapp {
+      margin: 40px 0;
+    }
+
+    .btn {
+      background-color: #e86c94;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -35,17 +155,9 @@
     </div>
 
     <div id="varian-paris" class="varian">
-      <div class="sub-produk">
-        <img src="model3.jpg" alt="Varian Hijab Paris">
-        <h4>Paris dari Seraphia Hijab</h4>
-        <p>Hadir dengan pilihan warna lembut, bahan nyaman, dan sentuhan elegan untuk tampilan anggun setiap hari. 
-           Menjadi simbol keanggunan yang tak lekang oleh waktu.</p>
-      </div>
-    </div>
-
-    <!-- 🌷 Tombol Linktree di Tengah -->
-    <div class="linktree-section">
-      <a href="https://linktr.ee/Seraphia_Hijab" target="_blank" class="tombol-linktree">Kunjungi Koleksi Lengkap Kami</a>
+      <img src="model3.jpg" alt="Varian Hijab Paris">
+      <h4>Paris dari Seraphia Hijab</h4>
+      <p>Hadir dengan bahan ringan, warna lembut, dan desain elegan untuk gaya sehari-hari yang menawan.</p>
     </div>
 
     <!-- Hijab Bella Square -->
@@ -56,19 +168,32 @@
     </div>
 
     <div id="varian-bella" class="varian">
-      <div class="sub-produk">
-        <img src="model4.jpg" alt="Varian Hijab Bella Square">
-        <h4>Bella by Seraphia Hijab</h4>
-        <p>Memadukan ketegasan bentuk dengan kelembutan warna pastel, 
-           Bella menghadirkan kesan mewah dan berkelas di setiap penampilanmu.</p>
-      </div>
+      <img src="model4.jpg" alt="Varian Hijab Bella Square">
+      <h4>Bella by Seraphia Hijab</h4>
+      <p>Memadukan ketegasan bentuk dengan kelembutan warna pastel untuk tampilan yang berkelas.</p>
+    </div>
+
+    <!-- 🌷 Tombol Linktree -->
+    <div class="linktree-section">
+      <a href="https://linktr.ee/Seraphia_Hijab" target="_blank" class="tombol-linktree">Kunjungi Koleksi Lengkap Kami</a>
     </div>
   </section>
 
+  <!-- 💬 Tombol WhatsApp -->
+  <section class="whatsapp">
+    <a href="https://wa.me/6282249726334" class="btn" target="_blank">💬 Chat WhatsApp Sekarang</a>
+  </section>
 
-  <!-- 💖 Testimoni -->
-  <section class="testimoni">
-    <h2>
-
-
-
+  <!-- 🔧 Script untuk menampilkan varian produk -->
+  <script>
+    function toggleVarian(jenis) {
+      const varian = document.getElementById('varian-' + jenis);
+      if (varian.style.display === 'block') {
+        varian.style.display = 'none';
+      } else {
+        varian.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
